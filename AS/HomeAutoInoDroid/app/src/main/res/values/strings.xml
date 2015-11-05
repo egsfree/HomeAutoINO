@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HomeAutoInoDroid</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Rele1">Relé 1</string>
+    <string name="Rele2">Relé 2</string>
+    <string name="Rele3">Relé 3</string>
+    <string name="Rele4">Relé 4</string>
+    <string name="Rele5">Relé 5</string>
+    <string name="Rele6">Relé 6</string>
+    <string name="Rele7">Relé 7</string>
+    <string name="Rele8">Relé 8</string>
+    <string name="IPAddress">Endereço IP:</string>
+    <string name="Connect">Conectar</string>
+    <string name="EditLabels">Editar</string>
+</resources>

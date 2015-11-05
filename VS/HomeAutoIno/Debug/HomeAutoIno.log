@@ -1,0 +1,1524 @@
+﻿Build started 13/09/2015 23:59:08.
+     1>Project "C:\Users\Eduardo\Documents\Arduino\HomeAutoIno\HomeAutoIno.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino" /I"C:\BKPEGS\arduino-1.0.1\hardware\arduino\variants\mega" /IC:\Users\Eduardo\Documents\Arduino\HomeAutoIno /I"C:\BKPEGS\arduino-1.0.1\libraries\Wire" /I"C:\BKPEGS\arduino-1.0.1\libraries\Wire\utility" /I"C:\BKPEGS\arduino-1.0.1\libraries\RTClib" /I"C:\BKPEGS\arduino-1.0.1\libraries\RTClib\utility" /I"C:\BKPEGS\arduino-1.0.1\libraries\EEPROM" /I"C:\BKPEGS\arduino-1.0.1\libraries\EEPROM\utility" /I"C:\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master" /I"C:\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\utility" /I"C:\BKPEGS\arduino-1.0.1\libraries" /I"C:\BKPEGS\arduino-1.0.1\hardware\arduino\libraries" /I"C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers" /IC:\Users\Eduardo\Documents\Arduino\libraries /I"c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\\" /I"c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\\" /I"c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\\" /I"c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\\" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D __AVR_ATmega2560__ /D ARDUINO=101 /D ARDUINO_MAIN /D __AVR__ /D __avr__ /D F_CPU=16000000L /D __cplusplus /D GCC_VERSION=40302 /D ARDUINO_ARCH_AVR /D ARDUINO_AVR_MEGA2560 /D _MBCS /X /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /FI"C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoIno\Visual Micro\.HomeAutoIno.vsarduino.h" /analyze- /errorReport:prompt "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\CDC.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HardwareSerial.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HID.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\IPAddress.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\main.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\new.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Print.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Stream.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Tone.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBCore.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WMath.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WString.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\Dhcp.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\Dns.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\UIPClient.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\UIPEthernet.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\UIPServer.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\UIPUdp.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\utility\Enc28J60Network.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip-master\utility\uip_debug.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\RTClib\RTClib.cpp" "..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\Wire.cpp" TimeEvents.cpp
+         TimeEvents.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Wire.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         RTClib.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         uip_debug.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         mempool.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Enc28J60Network.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         UIPUdp.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         UIPServer.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         UIPEthernet.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         UIPClient.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Dns.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Dhcp.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         WString.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         WMath.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         USBCore.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Tone.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Stream.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Print.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         new.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         main.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Generating Code...
+         Compiling...
+         IPAddress.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         HID.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         HardwareSerial.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         CDC.cpp
+     1>c1xx : warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(13): warning C4005: '__AVR_ATmega2560__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR_ATmega2560__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(15): warning C4005: 'ARDUINO_MAIN' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_MAIN'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(16): warning C4005: '__AVR__' : macro redefinition
+                 command-line arguments :  see previous definition of '__AVR__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(17): warning C4005: '__avr__' : macro redefinition
+                 command-line arguments :  see previous definition of '__avr__'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(19): warning C4117: macro name '__cplusplus' is reserved, '#define' ignored
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(21): warning C4005: 'ARDUINO_ARCH_AVR' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_ARCH_AVR'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(22): warning C4005: 'ARDUINO_AVR_MEGA2560' : macro redefinition
+                 command-line arguments :  see previous definition of 'ARDUINO_AVR_MEGA2560'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(29): warning C4005: '__asm__' : macro redefinition
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(24) : see previous definition of '__asm__'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\stddef.h(214): error C2371: 'size_t' : redefinition; different basic types
+                 c:\users\eduardo\documents\arduino\homeautoino\predefined c++ types (compiler internal)(19) : see declaration of 'size_t'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2072: 'div' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(152): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'div_t (int,int)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2072: 'ldiv' : initialization of a function
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\stdlib.h(158): error C2440: 'initializing' : cannot convert from 'const char [12]' to 'ldiv_t (long,long)'
+                 There are no conversions to function types, although there are conversions to references or pointers to functions
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(336): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(337): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(413): error C2143: syntax error : missing ')' before ':'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\math.h(414): error C2059: syntax error : ')'
+     1>c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(211): warning C4091: 'typedef ' : ignored on left of 'void' when no variable is declared
+     1>c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(94): error C2371: 'byte' : redefinition; different basic types
+                 c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(43) : see declaration of 'byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(51): warning C4005: 'pgm_read_byte' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(696) : see previous definition of 'pgm_read_byte'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(52): warning C4005: 'pgm_read_word' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\pgmspace.h(705) : see previous definition of 'pgm_read_word'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(54): warning C4005: 'digitalPinToPort' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(141) : see previous definition of 'digitalPinToPort'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(55): warning C4005: 'digitalPinToBitMask' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(142) : see previous definition of 'digitalPinToBitMask'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(56): warning C4005: 'digitalPinToTimer' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(143) : see previous definition of 'digitalPinToTimer'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(57): warning C4005: 'analogInPinToBit' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(123) : see previous definition of 'analogInPinToBit'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(58): warning C4005: 'portOutputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(145) : see previous definition of 'portOutputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(59): warning C4005: 'portInputRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(146) : see previous definition of 'portInputRegister'
+     1>c:\users\eduardo\desktop\jagger\trunk\homeautoino\vs\homeautoino\visual micro\.homeautoino.vsarduino.h(60): warning C4005: 'portModeRegister' : macro redefinition
+                 c:\bkpegs\arduino-1.0.1\hardware\arduino\cores\arduino\arduino.h(147) : see previous definition of 'portModeRegister'
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\utility\mempool_conf.h(19): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\bkpegs\arduino-1.0.1\libraries\arduino_uip-master\uipclient.h(25): fatal error C1083: Cannot open include file: 'comdef.h': No such file or directory
+                 This error occurred in injected text:
+                 
+         
+         //+++ Start Injected Code
+         #injected_line 25 "c:\\bkpegs\\arduino-1.0.1\\libraries\\arduino_uip-master\\uipclient.h"
+         
+         #include <comdef.h>
+         
+         //--- End Injected Code
+         
+         Generating Code...
+     1>Done Building Project "C:\Users\Eduardo\Documents\Arduino\HomeAutoIno\HomeAutoIno.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.38

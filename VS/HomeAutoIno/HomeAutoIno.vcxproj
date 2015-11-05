@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2853CE69-24EB-4182-9853-7992AAED49A4}</ProjectGuid>
+    <RootNamespace>HomeAutoIno</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\Headers;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino;C:\BKPEGS\arduino-1.0.1\hardware\arduino\variants\standard;C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoIno;C:\BKPEGS\arduino-1.0.1\libraries\Wire;C:\BKPEGS\arduino-1.0.1\libraries\Wire\utility;C:\BKPEGS\arduino-1.0.1\libraries\RTClib;C:\BKPEGS\arduino-1.0.1\libraries\RTClib\utility;C:\BKPEGS\arduino-1.0.1\libraries\EEPROM;C:\BKPEGS\arduino-1.0.1\libraries\EEPROM\utility;C:\BKPEGS\arduino-1.0.1\libraries\arduino_uip;C:\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility;C:\BKPEGS\arduino-1.0.1\libraries;C:\BKPEGS\arduino-1.0.1\hardware\arduino\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Eduardo\Documents\Arduino\libraries;c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\;c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\include\avr\;c:\bkpegs\arduino-1.0.1\hardware\tools\avr\avr\;c:\bkpegs\arduino-1.0.1\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoIno\Visual Micro\.HomeAutoIno.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=101;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_UNO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="HomeAutoIno.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Arduino.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\binary.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Client.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HardwareSerial.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\IPAddress.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\new.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Platform.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Print.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Printable.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Server.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Stream.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Udp.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBAPI.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBCore.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBDesc.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WCharacter.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_private.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WProgram.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WString.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\variants\standard\pins_arduino.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dhcp.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dns.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\ethernet_comp.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPClient.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPEthernet.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPUdp.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\clock-arch.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\enc28j60.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\Enc28J60Network.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\mempool.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\mempool_conf.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip-conf.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uipethernet-conf.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uipopt.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_arch.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_arp.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_clock.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_debug.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_timer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\util.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\EEPROM\EEPROM.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\MemoryFree\MemoryFree.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\RTClib\RTClib.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\utility\twi.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\Wire.h" />
+    <ClInclude Include="CommandsDefinitions.h" />
+    <ClInclude Include="Defs.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="E2PAddrs.h" />
+    <ClInclude Include="TimeEvents.h" />
+    <ClInclude Include="Visual Micro\.HomeAutoIno.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\CDC.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HardwareSerial.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HID.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\IPAddress.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\new.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Print.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Stream.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Tone.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBCore.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WInterrupts.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_analog.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_digital.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_pulse.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_shift.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WMath.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WString.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dhcp.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dns.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPEthernet.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPUdp.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\clock-arch.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\Enc28J60Network.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\mempool.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_arp.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_debug.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_timer.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\EEPROM\EEPROM.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\MemoryFree\MemoryFree.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\RTClib\RTClib.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\utility\twi.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\Wire.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.maximum_size="32256" arduino.upload.speed="115200" visualmicro.package.name="arduino" arduino.board.property_bag="name=Arduino Uno&#xD;&#xA;upload.protocol=arduino&#xD;&#xA;upload.maximum_size=32256&#xD;&#xA;upload.speed=115200&#xD;&#xA;bootloader.low_fuses=0xff&#xD;&#xA;bootloader.high_fuses=0xde&#xD;&#xA;bootloader.extended_fuses=0x05&#xD;&#xA;bootloader.path=optiboot&#xD;&#xA;bootloader.file=optiboot_atmega328.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega328p&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.core=arduino&#xD;&#xA;build.variant=standard&#xD;&#xA;runtime.ide.path=C:\BKPEGS\arduino-1.0.1\&#xD;&#xA;build.system.path=C:\BKPEGS\arduino-1.0.1\hardware\arduino\system&#xD;&#xA;runtime.ide.version=101&#xD;&#xA;originalid=uno&#xD;&#xA;vm.platform.root.path=C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x&#xD;&#xA;ide.hint=Arduino 0023 and 1.0.x Ide&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=C:\Users\Eduardo\Documents\Arduino&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;build.board=AVR_UNO&#xD;&#xA;vm.boardsource.path=C:\BKPEGS\arduino-1.0.1\hardware\arduino&#xD;&#xA;runtime.platform.path=C:\BKPEGS\arduino-1.0.1\hardware\arduino&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;vm.runtime.compiler.showwarnings=false&#xD;&#xA;serial.port.file=COM6&#xD;&#xA;serial.port=COM6&#xD;&#xA;serial.port.num=6&#xD;&#xA;compiler.path=C:\BKPEGS\arduino-1.0.1\hardware\tools\avr\bin\&#xD;&#xA;extra.time.local=10780901&#xD;&#xA;includes= -I&quot;C:\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\hardware\arduino\variants\standard&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\libraries\Wire&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\libraries\RTClib&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\libraries\EEPROM&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\libraries\MemoryFree&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\libraries\arduino_uip&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\libraries&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\hardware\arduino\libraries&quot;  -I&quot;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers&quot;  -I&quot;C:\Users\Eduardo\Documents\Arduino\libraries&quot;  -I&quot;C:\BKPEGS\arduino-1.0.1\libraries\Wire\utility&quot; -I&quot;C:\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility&quot;&#xD;&#xA;build.path=C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno&#xD;&#xA;build.project_name=HomeAutoIno&#xD;&#xA;build.variant.path=C:\BKPEGS\arduino-1.0.1\hardware\arduino\variants\standard&#xD;&#xA;build.core.path=C:\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino&#xD;&#xA;archive_file=core.a&#xD;&#xA;object_file=C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\uip_debug.cpp.o&#xD;&#xA;source_file=C:\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_debug.cpp&#xD;&#xA;object_files=&quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\HomeAutoIno.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\TimeEvents.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\Wire\Wire.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\Wire\utility\twi.c.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\RTClib\RTClib.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\EEPROM\EEPROM.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\MemoryFree\MemoryFree.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\Dhcp.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\Dns.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\UIPClient.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\UIPEthernet.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\UIPServer.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\UIPUdp.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\clock-arch.c.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\uip.c.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\uip_arp.c.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\uip_timer.c.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\Enc28J60Network.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\mempool.cpp.o&quot; &quot;C:\Users\Eduardo\AppData\Local\V.Micro\Arduino\Builds\HomeAutoIno\uno\arduino_uip\utility\uip_debug.cpp.o&quot; &#xD;&#xA;" visualmicro.application.name="arduino10x" arduino.build.mcu="atmega328p" arduino.upload.protocol="arduino" arduino.build.f_cpu="16000000L" arduino.board.desc="Arduino Uno" arduino.board.name="uno" arduino.upload.port="COM6" visualmicro.platform.name="avr" arduino.build.core="arduino" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

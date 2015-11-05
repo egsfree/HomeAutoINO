@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="_core">
+      <UniqueIdentifier>{40059509-ec46-495b-a3c8-27122e644bcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries">
+      <UniqueIdentifier>{484081b7-3482-4954-aab7-b82b097397db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\Wire">
+      <UniqueIdentifier>{29094374-eb9d-4f57-8ad1-2b6a2c7fc1f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\Wire\utility">
+      <UniqueIdentifier>{533cfcc8-68b1-49e6-90c1-e73451da1e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\RTClib">
+      <UniqueIdentifier>{c60b089e-db90-4e51-9237-5be84057c2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\EEPROM">
+      <UniqueIdentifier>{46e7703f-bb23-41a0-90ba-63b9d53989ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\MemoryFree">
+      <UniqueIdentifier>{04be7a39-5a83-4b5d-9f68-24fadf0d919b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\arduino_uip">
+      <UniqueIdentifier>{0146446b-39fa-4d43-8ea0-bd259dd3ec00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_libraries\arduino_uip\utility">
+      <UniqueIdentifier>{25e29474-c392-490a-8bc1-d562a31d8b05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HomeAutoIno.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Visual Micro\.HomeAutoIno.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeEvents.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandsDefinitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Arduino.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\binary.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Client.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HardwareSerial.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\IPAddress.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\new.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Platform.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Print.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Printable.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Server.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Stream.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Udp.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBAPI.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBCore.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBDesc.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WCharacter.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_private.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WProgram.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WString.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\variants\standard\pins_arduino.h">
+      <Filter>_core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\Wire.h">
+      <Filter>_libraries\Wire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\utility\twi.h">
+      <Filter>_libraries\Wire\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\RTClib\RTClib.h">
+      <Filter>_libraries\RTClib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\EEPROM\EEPROM.h">
+      <Filter>_libraries\EEPROM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\MemoryFree\MemoryFree.h">
+      <Filter>_libraries\MemoryFree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dhcp.h">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dns.h">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\ethernet_comp.h">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPClient.h">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPEthernet.h">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPServer.h">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPUdp.h">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\clock-arch.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\enc28j60.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\Enc28J60Network.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\mempool.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\mempool_conf.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip-conf.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uipethernet-conf.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uipopt.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_arch.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_arp.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_clock.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_debug.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_timer.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\util.h">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="E2PAddrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\CDC.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HardwareSerial.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\HID.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\IPAddress.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\main.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\new.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Print.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Stream.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\Tone.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\USBCore.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WInterrupts.c">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring.c">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_analog.c">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_digital.c">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_pulse.c">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\wiring_shift.c">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WMath.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\WString.cpp">
+      <Filter>_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\Wire.cpp">
+      <Filter>_libraries\Wire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\Wire\utility\twi.c">
+      <Filter>_libraries\Wire\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\RTClib\RTClib.cpp">
+      <Filter>_libraries\RTClib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\EEPROM\EEPROM.cpp">
+      <Filter>_libraries\EEPROM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\MemoryFree\MemoryFree.cpp">
+      <Filter>_libraries\MemoryFree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dhcp.cpp">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\Dns.cpp">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPClient.cpp">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPEthernet.cpp">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPServer.cpp">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\UIPUdp.cpp">
+      <Filter>_libraries\arduino_uip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\clock-arch.c">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\Enc28J60Network.cpp">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\mempool.cpp">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip.c">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_arp.c">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_debug.cpp">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\libraries\arduino_uip\utility\uip_timer.c">
+      <Filter>_libraries\arduino_uip\utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
