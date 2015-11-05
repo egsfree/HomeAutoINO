@@ -19,7 +19,6 @@ namespace HomeAutoInoDesktop
         public string IPAddr;
         public string Port;
 
-
         public Principal()
         {
             InitializeComponent();
