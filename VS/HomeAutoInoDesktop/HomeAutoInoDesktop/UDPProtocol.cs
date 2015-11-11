@@ -175,7 +175,7 @@ namespace HomeAutoInoDesktop
             return 0;
         }
 
-        unsafe int MakePackage ( CmdData CmdPackage, ref byte[] bData )
+       public unsafe int MakePackage ( CmdData CmdPackage, ref byte[] bData )
         {
             /*byte [] bData = new byte[128];*/
             int DataCount = 0;

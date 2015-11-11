@@ -92,6 +92,7 @@ typedef struct
 	BYTE bStatus;
 	BYTE bRXData[60];
 	BYTE bCRC;
+	TYPECOM FromCom;
 }sPackage;
 
 #endif

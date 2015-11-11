@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBoxIP = new System.Windows.Forms.GroupBox();
             this.buttonConnOk = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -133,7 +134,13 @@
             this.buttonR1Off = new System.Windows.Forms.Button();
             this.buttonR1On = new System.Windows.Forms.Button();
             this.groupBoxTimeDate = new System.Windows.Forms.GroupBox();
+            this.Serial = new System.IO.Ports.SerialPort(this.components);
+            this.buttonSysInfo = new System.Windows.Forms.Button();
+            this.textBoxIPFromSys = new System.Windows.Forms.TextBox();
+            this.buttonListPorts = new System.Windows.Forms.Button();
+            this.comboBoxPorts = new System.Windows.Forms.ComboBox();
             this.groupBoxIP.SuspendLayout();
+            this.groupBoxInfo.SuspendLayout();
             this.groupBoxControle.SuspendLayout();
             this.panelRelay16.SuspendLayout();
             this.panelRelay15.SuspendLayout();
@@ -213,6 +220,10 @@
             // 
             // groupBoxInfo
             // 
+            this.groupBoxInfo.Controls.Add(this.comboBoxPorts);
+            this.groupBoxInfo.Controls.Add(this.buttonListPorts);
+            this.groupBoxInfo.Controls.Add(this.textBoxIPFromSys);
+            this.groupBoxInfo.Controls.Add(this.buttonSysInfo);
             this.groupBoxInfo.Location = new System.Drawing.Point(332, 12);
             this.groupBoxInfo.Name = "groupBoxInfo";
             this.groupBoxInfo.Size = new System.Drawing.Size(301, 81);
@@ -1334,6 +1345,47 @@
             this.groupBoxTimeDate.TabStop = false;
             this.groupBoxTimeDate.Text = "Data/Hora do Dispositivo";
             // 
+            // Serial
+            // 
+            this.Serial.BaudRate = 57600;
+            this.Serial.PortName = "COM3";
+            this.Serial.ReadTimeout = 1000;
+            // 
+            // buttonSysInfo
+            // 
+            this.buttonSysInfo.Location = new System.Drawing.Point(207, 19);
+            this.buttonSysInfo.Name = "buttonSysInfo";
+            this.buttonSysInfo.Size = new System.Drawing.Size(75, 23);
+            this.buttonSysInfo.TabIndex = 0;
+            this.buttonSysInfo.Text = "Obter!";
+            this.buttonSysInfo.UseVisualStyleBackColor = true;
+            this.buttonSysInfo.Click += new System.EventHandler(this.buttonSysInfo_Click);
+            // 
+            // textBoxIPFromSys
+            // 
+            this.textBoxIPFromSys.Location = new System.Drawing.Point(23, 21);
+            this.textBoxIPFromSys.Name = "textBoxIPFromSys";
+            this.textBoxIPFromSys.Size = new System.Drawing.Size(141, 20);
+            this.textBoxIPFromSys.TabIndex = 1;
+            // 
+            // buttonListPorts
+            // 
+            this.buttonListPorts.Location = new System.Drawing.Point(207, 48);
+            this.buttonListPorts.Name = "buttonListPorts";
+            this.buttonListPorts.Size = new System.Drawing.Size(75, 23);
+            this.buttonListPorts.TabIndex = 2;
+            this.buttonListPorts.Text = "Atualizar";
+            this.buttonListPorts.UseVisualStyleBackColor = true;
+            this.buttonListPorts.Click += new System.EventHandler(this.buttonListPorts_Click);
+            // 
+            // comboBoxPorts
+            // 
+            this.comboBoxPorts.FormattingEnabled = true;
+            this.comboBoxPorts.Location = new System.Drawing.Point(23, 50);
+            this.comboBoxPorts.Name = "comboBoxPorts";
+            this.comboBoxPorts.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxPorts.TabIndex = 3;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1349,6 +1401,8 @@
             this.Load += new System.EventHandler(this.Principal_Load);
             this.groupBoxIP.ResumeLayout(false);
             this.groupBoxIP.PerformLayout();
+            this.groupBoxInfo.ResumeLayout(false);
+            this.groupBoxInfo.PerformLayout();
             this.groupBoxControle.ResumeLayout(false);
             this.panelRelay16.ResumeLayout(false);
             this.panelRelay16.PerformLayout();
@@ -1493,6 +1547,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxIP;
         private System.Windows.Forms.Button buttonConnOk;
+        private System.Windows.Forms.TextBox textBoxIPFromSys;
+        private System.Windows.Forms.Button buttonSysInfo;
+        private System.IO.Ports.SerialPort Serial;
+        private System.Windows.Forms.ComboBox comboBoxPorts;
+        private System.Windows.Forms.Button buttonListPorts;
     }
 }
 

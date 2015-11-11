@@ -20,5 +20,7 @@
 #define CMD_SET_EVENT 0x0B
 #define CMD_GET_EVENT 0x0C
 
+#define CMD_GET_IP 0x0D
+#define CMD_SET_IP 0x0E
 
 #endif

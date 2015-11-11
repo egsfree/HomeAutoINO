@@ -201,6 +201,9 @@
     <ClInclude Include="E2PAddrs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="__vm\.HomeAutoIno.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\..\..\BKPEGS\arduino-1.0.1\hardware\arduino\cores\arduino\CDC.cpp">

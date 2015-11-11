@@ -19,6 +19,7 @@ namespace HomeAutoInoDesktop
         public string IPAddr;
         public string Port;
 
+
         public Principal()
         {
             InitializeComponent();
@@ -146,6 +147,45 @@ namespace HomeAutoInoDesktop
             }
         }
 
- 
+        private void buttonSysInfo_Click(object sender, EventArgs e)
+        {
+            CmdData SerialData = new CmdData();
+            byte[] bData = new byte[128];
+            byte[] bRData = new byte[128];
+
+            SerialData.bCmd = CommandPackgeDefs.CMD_GET_IP;
+            SerialData.bNumData = 1;
+
+            int numdata = UDPProt.MakePackage(SerialData, ref bData);
+
+            try
+            {
+                Serial.PortName = comboBoxPorts.Text;
+                Serial.Open();               
+
+                Serial.Write(bData, 0, numdata);
+                System.Threading.Thread.Sleep(100);
+                Serial.Read(bRData, 0, 13);
+                Serial.Close();
+
+                textBoxIPFromSys.Text = Convert.ToString(bRData[7]) + "." + Convert.ToString(bRData[8]) + "." + Convert.ToString(bRData[9]) + "." + Convert.ToString(bRData[10]);
+                
+            }
+            catch (Exception)
+            {
+                Serial.Close();
+                textBoxIPFromSys.Text = "Erro.";
+            }
+
+
+            
+
+        }
+
+        private void buttonListPorts_Click(object sender, EventArgs e)
+        {
+            var ports = System.IO.Ports.SerialPort.GetPortNames();
+            comboBoxPorts.DataSource = ports;
+        }
     }
 }

@@ -49,14 +49,11 @@ void setup() {
 	RTC.begin();//Inicializacao do modulo RTC
 
 	if (!RTC.isrunning()) {
-#ifdef DEBUG_SERIAL
 		Serial.println("RTC is NOT running!");
-#endif
 	}
 	else
 	{		
 		DateTime now = RTC.now();//Recuperando a data e hora atual
-#ifdef DEBUG_SERIAL
 		Serial.print(now.day(), DEC);//Imprimindo o dia
 		Serial.print('/');
 		Serial.print(now.month(), DEC);//Recuperando o mes
@@ -69,7 +66,6 @@ void setup() {
 		Serial.print(':');
 		Serial.print(now.second(), DEC);//Recuperando os segundos
 		Serial.println();
-#endif
 		
 		
 	}
@@ -105,9 +101,7 @@ void setup() {
 	const uint8_t mac[6] = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05 };
 
 	// Ethernet.begin(mac,IPAddress(192,168,1,190));
-#ifdef DEBUG_SERIAL
-       Serial.println("aLIVE/!");
-#endif
+       //Serial.println("aLIVE/!");
 
 	Ethernet.begin(mac);
 
@@ -132,13 +126,13 @@ void loop()
 {
 	static BYTE iCountSlots = 0;
 
-/*	static WORD bSendCycles = SEND_CYCLES;*/
+	static WORD bSendCycles = SEND_CYCLES;
 
 	while (1)
 	{
                  
 		udp.begin(5000);
-		/*
+
 		if (bSendCycles >= SEND_CYCLES)
 		{
 			SendPackageFindMe();
@@ -149,7 +143,6 @@ void loop()
 		{
 			bSendCycles++;
 		}
-		*/
 
 		ProcessRelays();
                
@@ -184,8 +177,6 @@ void loop()
 				continue;
 			}
 
-			psRcvPackage->FromCom = TETHERNET;
-
 			ProcessPackage(psRcvPackage, TETHERNET);
 			udp.flush();
 			//udp.stop();
@@ -211,8 +202,6 @@ void loop()
 				Serial.begin(57600);
 				continue;
 			}
-
-			psRcvPackage->FromCom = TSERIAL;
 
 			ProcessPackage(psRcvPackage, TSERIAL);
 			Serial.flush();
@@ -371,9 +360,7 @@ sPackage * RecebePacote(TYPECOM FromCOM)
 			case END:
 				if (bData == ENDTRANSMISSION)
 				{
-#ifdef DEBUG_SERIAL
 					Serial.println("EOT Received");
-#endif
 					bPckgReady = 0x01U;
 				}
 				else
@@ -524,20 +511,6 @@ BYTE ProcessPackage(sPackage * psRcvPackage, TYPECOM FromCOM)
 	}
 	break;
 
-	case CMD_GET_IP:
-	{
-		static IPAddress myIP = Ethernet.localIP();	
-
-		psRcvPackage->bRXData[0] = myIP[0];
-		psRcvPackage->bRXData[1] = myIP[1];
-		psRcvPackage->bRXData[2] = myIP[2];
-		psRcvPackage->bRXData[3] = myIP[3];
-
-
-		psRcvPackage->bNumData = 4;
-	}
-	break;
-
 	default:
 
 		break;
@@ -548,7 +521,7 @@ BYTE ProcessPackage(sPackage * psRcvPackage, TYPECOM FromCOM)
 #ifdef DEBUG_SERIAL
 	Serial.println("Generic Data. Retransmitting...");
 #endif
-	SendPackage(psRcvPackage, psRcvPackage->FromCom);
+	SendPackage(psRcvPackage, TETHERNET);
 
 #ifdef DEBUG_SERIAL
 	Serial.println("Done Process Package.");
