@@ -136,9 +136,12 @@
             this.groupBoxTimeDate = new System.Windows.Forms.GroupBox();
             this.Serial = new System.IO.Ports.SerialPort(this.components);
             this.buttonSysInfo = new System.Windows.Forms.Button();
-            this.textBoxIPFromSys = new System.Windows.Forms.TextBox();
             this.buttonListPorts = new System.Windows.Forms.Button();
             this.comboBoxPorts = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonGetDateTime = new System.Windows.Forms.Button();
+            this.textBoxDateTime = new System.Windows.Forms.TextBox();
+            this.buttonSyncDateTime = new System.Windows.Forms.Button();
             this.groupBoxIP.SuspendLayout();
             this.groupBoxInfo.SuspendLayout();
             this.groupBoxControle.SuspendLayout();
@@ -158,6 +161,7 @@
             this.panelRelay3.SuspendLayout();
             this.panelRelay2.SuspendLayout();
             this.panelRelay1.SuspendLayout();
+            this.groupBoxTimeDate.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxIP
@@ -176,7 +180,7 @@
             // 
             // buttonConnOk
             // 
-            this.buttonConnOk.Location = new System.Drawing.Point(233, 37);
+            this.buttonConnOk.Location = new System.Drawing.Point(233, 48);
             this.buttonConnOk.Name = "buttonConnOk";
             this.buttonConnOk.Size = new System.Drawing.Size(75, 23);
             this.buttonConnOk.TabIndex = 4;
@@ -195,6 +199,7 @@
             // 
             // textBoxPort
             // 
+            this.textBoxPort.Enabled = false;
             this.textBoxPort.Location = new System.Drawing.Point(143, 40);
             this.textBoxPort.Name = "textBoxPort";
             this.textBoxPort.Size = new System.Drawing.Size(73, 20);
@@ -220,16 +225,16 @@
             // 
             // groupBoxInfo
             // 
+            this.groupBoxInfo.Controls.Add(this.label3);
             this.groupBoxInfo.Controls.Add(this.comboBoxPorts);
             this.groupBoxInfo.Controls.Add(this.buttonListPorts);
-            this.groupBoxInfo.Controls.Add(this.textBoxIPFromSys);
             this.groupBoxInfo.Controls.Add(this.buttonSysInfo);
             this.groupBoxInfo.Location = new System.Drawing.Point(332, 12);
             this.groupBoxInfo.Name = "groupBoxInfo";
-            this.groupBoxInfo.Size = new System.Drawing.Size(301, 81);
+            this.groupBoxInfo.Size = new System.Drawing.Size(282, 81);
             this.groupBoxInfo.TabIndex = 1;
             this.groupBoxInfo.TabStop = false;
-            this.groupBoxInfo.Text = "Informações sobre o Sistema";
+            this.groupBoxInfo.Text = "Comunicação Serial";
             // 
             // groupBoxControle
             // 
@@ -1338,9 +1343,12 @@
             // 
             // groupBoxTimeDate
             // 
-            this.groupBoxTimeDate.Location = new System.Drawing.Point(639, 12);
+            this.groupBoxTimeDate.Controls.Add(this.buttonSyncDateTime);
+            this.groupBoxTimeDate.Controls.Add(this.textBoxDateTime);
+            this.groupBoxTimeDate.Controls.Add(this.buttonGetDateTime);
+            this.groupBoxTimeDate.Location = new System.Drawing.Point(620, 12);
             this.groupBoxTimeDate.Name = "groupBoxTimeDate";
-            this.groupBoxTimeDate.Size = new System.Drawing.Size(267, 81);
+            this.groupBoxTimeDate.Size = new System.Drawing.Size(286, 81);
             this.groupBoxTimeDate.TabIndex = 4;
             this.groupBoxTimeDate.TabStop = false;
             this.groupBoxTimeDate.Text = "Data/Hora do Dispositivo";
@@ -1353,38 +1361,68 @@
             // 
             // buttonSysInfo
             // 
-            this.buttonSysInfo.Location = new System.Drawing.Point(207, 19);
+            this.buttonSysInfo.Location = new System.Drawing.Point(168, 48);
             this.buttonSysInfo.Name = "buttonSysInfo";
-            this.buttonSysInfo.Size = new System.Drawing.Size(75, 23);
+            this.buttonSysInfo.Size = new System.Drawing.Size(91, 23);
             this.buttonSysInfo.TabIndex = 0;
-            this.buttonSysInfo.Text = "Obter!";
+            this.buttonSysInfo.Text = "Obter IP";
             this.buttonSysInfo.UseVisualStyleBackColor = true;
             this.buttonSysInfo.Click += new System.EventHandler(this.buttonSysInfo_Click);
             // 
-            // textBoxIPFromSys
-            // 
-            this.textBoxIPFromSys.Location = new System.Drawing.Point(23, 21);
-            this.textBoxIPFromSys.Name = "textBoxIPFromSys";
-            this.textBoxIPFromSys.Size = new System.Drawing.Size(141, 20);
-            this.textBoxIPFromSys.TabIndex = 1;
-            // 
             // buttonListPorts
             // 
-            this.buttonListPorts.Location = new System.Drawing.Point(207, 48);
+            this.buttonListPorts.Location = new System.Drawing.Point(168, 19);
             this.buttonListPorts.Name = "buttonListPorts";
-            this.buttonListPorts.Size = new System.Drawing.Size(75, 23);
+            this.buttonListPorts.Size = new System.Drawing.Size(91, 23);
             this.buttonListPorts.TabIndex = 2;
-            this.buttonListPorts.Text = "Atualizar";
+            this.buttonListPorts.Text = "Atualizar Porta";
             this.buttonListPorts.UseVisualStyleBackColor = true;
             this.buttonListPorts.Click += new System.EventHandler(this.buttonListPorts_Click);
             // 
             // comboBoxPorts
             // 
             this.comboBoxPorts.FormattingEnabled = true;
-            this.comboBoxPorts.Location = new System.Drawing.Point(23, 50);
+            this.comboBoxPorts.Location = new System.Drawing.Point(23, 36);
             this.comboBoxPorts.Name = "comboBoxPorts";
-            this.comboBoxPorts.Size = new System.Drawing.Size(141, 21);
+            this.comboBoxPorts.Size = new System.Drawing.Size(104, 21);
             this.comboBoxPorts.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Porta:";
+            // 
+            // buttonGetDateTime
+            // 
+            this.buttonGetDateTime.Location = new System.Drawing.Point(193, 19);
+            this.buttonGetDateTime.Name = "buttonGetDateTime";
+            this.buttonGetDateTime.Size = new System.Drawing.Size(75, 23);
+            this.buttonGetDateTime.TabIndex = 0;
+            this.buttonGetDateTime.Text = "Obter";
+            this.buttonGetDateTime.UseVisualStyleBackColor = true;
+            this.buttonGetDateTime.Click += new System.EventHandler(this.buttonGetDateTime_Click);
+            // 
+            // textBoxDateTime
+            // 
+            this.textBoxDateTime.Location = new System.Drawing.Point(20, 34);
+            this.textBoxDateTime.Name = "textBoxDateTime";
+            this.textBoxDateTime.ReadOnly = true;
+            this.textBoxDateTime.Size = new System.Drawing.Size(148, 20);
+            this.textBoxDateTime.TabIndex = 1;
+            // 
+            // buttonSyncDateTime
+            // 
+            this.buttonSyncDateTime.Location = new System.Drawing.Point(193, 48);
+            this.buttonSyncDateTime.Name = "buttonSyncDateTime";
+            this.buttonSyncDateTime.Size = new System.Drawing.Size(75, 23);
+            this.buttonSyncDateTime.TabIndex = 2;
+            this.buttonSyncDateTime.Text = "Sincronizar";
+            this.buttonSyncDateTime.UseVisualStyleBackColor = true;
+            this.buttonSyncDateTime.Click += new System.EventHandler(this.buttonSyncDateTime_Click);
             // 
             // Principal
             // 
@@ -1436,6 +1474,8 @@
             this.panelRelay2.PerformLayout();
             this.panelRelay1.ResumeLayout(false);
             this.panelRelay1.PerformLayout();
+            this.groupBoxTimeDate.ResumeLayout(false);
+            this.groupBoxTimeDate.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1547,11 +1587,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxIP;
         private System.Windows.Forms.Button buttonConnOk;
-        private System.Windows.Forms.TextBox textBoxIPFromSys;
         private System.Windows.Forms.Button buttonSysInfo;
         private System.IO.Ports.SerialPort Serial;
         private System.Windows.Forms.ComboBox comboBoxPorts;
         private System.Windows.Forms.Button buttonListPorts;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxDateTime;
+        private System.Windows.Forms.Button buttonGetDateTime;
+        private System.Windows.Forms.Button buttonSyncDateTime;
     }
 }
 

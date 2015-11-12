@@ -11,6 +11,7 @@
 */
 
 #include <UIPEthernet.h>
+#include <avr/wdt.h>
 #include "Defs.h"
 #include <string.h>
 #include <Wire.h>
@@ -43,7 +44,7 @@ BYTE GetIPBroadcast(char * INLocalIP, char * OUTBroadIP);
 
 
 void setup() {
-	
+	wdt_enable(WDTO_8S);
 	Serial.begin(57600);
 	Wire.begin();//Inicializacao do protocolo wire
 	RTC.begin();//Inicializacao do modulo RTC
@@ -55,7 +56,7 @@ void setup() {
 	}
 	else
 	{		
-		DateTime now = RTC.now();//Recuperando a data e hora atual
+		//DateTime now = RTC.now();//Recuperando a data e hora atual
 #ifdef DEBUG_SERIAL
 		Serial.print(now.day(), DEC);//Imprimindo o dia
 		Serial.print('/');
@@ -136,7 +137,7 @@ void loop()
 
 	while (1)
 	{
-                 
+		wdt_reset();
 		udp.begin(5000);
 		/*
 		if (bSendCycles >= SEND_CYCLES)
@@ -538,8 +539,33 @@ BYTE ProcessPackage(sPackage * psRcvPackage, TYPECOM FromCOM)
 	}
 	break;
 
-	default:
+	case CMD_GET_DATETIME:
+	{
 
+		DateTime now = RTC.now();
+
+		psRcvPackage->bRXData[0] = (BYTE)now.day();
+		psRcvPackage->bRXData[1] = (BYTE)now.month();
+		psRcvPackage->bRXData[2] = (BYTE)(now.year() - 2000);
+		psRcvPackage->bRXData[3] = (BYTE)now.hour();
+		psRcvPackage->bRXData[4] = (BYTE)now.minute();
+		psRcvPackage->bRXData[5] = (BYTE)now.second();
+
+
+		psRcvPackage->bNumData = 6;
+	}
+	break;
+
+	case CMD_SET_DATETIME:
+	{
+		static IPAddress myIP = Ethernet.localIP();
+		DateTime AdjustTime(psRcvPackage->bRXData[2] + 2000, psRcvPackage->bRXData[1], psRcvPackage->bRXData[0], psRcvPackage->bRXData[3], psRcvPackage->bRXData[4], psRcvPackage->bRXData[5]);
+		RTC.adjust(AdjustTime);		
+	}
+	break;
+
+	default:
+		psRcvPackage->bStatus = ((BYTE) - 3);
 		break;
 
 
@@ -785,7 +811,7 @@ BYTE ProcessGetEvents(sEvent * Event)
 
 	if ((bBuffer[0] < OnceDayEvent) || ((bBuffer[0] > WeeklyEvent)))
 	{
-		return (BYTE)-1;
+		return (BYTE)-2;
 	}
 
 

@@ -30,6 +30,9 @@ namespace HomeAutoInoDesktop
         public const byte CMD_GET_IP        = 0x0D;
         public const byte CMD_SET_IP        = 0x0E;
 
+        public const byte CMD_GET_DATETIME  = 0x0F;
+        public const byte CMD_SET_DATETIME  = 0x10;
+
 
 
     }

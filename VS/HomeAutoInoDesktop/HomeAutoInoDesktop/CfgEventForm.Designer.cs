@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBoxWeek = new System.Windows.Forms.GroupBox();
             this.checkBoxSegunda = new System.Windows.Forms.CheckBox();
             this.checkBoxSabado = new System.Windows.Forms.CheckBox();
@@ -44,14 +45,14 @@
             this.groupBoxDate = new System.Windows.Forms.GroupBox();
             this.EventDate = new System.Windows.Forms.DateTimePicker();
             this.comboBoxRelay = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBoxStopTime = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.StopSecond = new System.Windows.Forms.NumericUpDown();
             this.StopMinute = new System.Windows.Forms.NumericUpDown();
             this.StopHour = new System.Windows.Forms.NumericUpDown();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxStartTime = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Hora = new System.Windows.Forms.Label();
@@ -62,16 +63,16 @@
             this.comboBoxEventSlot = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.statusBar = new System.Windows.Forms.StatusStrip();
-            this.label7 = new System.Windows.Forms.Label();
+            this.radioButtonDesativado = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBoxWeek.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBoxDate.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBoxStopTime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StopSecond)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StopMinute)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StopHour)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxStartTime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartSecond)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartMinute)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartHour)).BeginInit();
@@ -84,8 +85,8 @@
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBoxDate);
             this.groupBox1.Controls.Add(this.comboBoxRelay);
-            this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.groupBoxStopTime);
+            this.groupBox1.Controls.Add(this.groupBoxStartTime);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboBoxEventSlot);
             this.groupBox1.Controls.Add(this.button1);
@@ -95,6 +96,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controle de Eventos";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(22, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Relé:";
             // 
             // groupBoxWeek
             // 
@@ -106,7 +116,7 @@
             this.groupBoxWeek.Controls.Add(this.checkBoxTerca);
             this.groupBoxWeek.Controls.Add(this.checkBoxDomingo);
             this.groupBoxWeek.Enabled = false;
-            this.groupBoxWeek.Location = new System.Drawing.Point(25, 233);
+            this.groupBoxWeek.Location = new System.Drawing.Point(25, 262);
             this.groupBoxWeek.Name = "groupBoxWeek";
             this.groupBoxWeek.Size = new System.Drawing.Size(288, 72);
             this.groupBoxWeek.TabIndex = 30;
@@ -185,12 +195,13 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.radioButtonDesativado);
             this.groupBox5.Controls.Add(this.radioButtonWeekly);
             this.groupBox5.Controls.Add(this.radioButtonOneTime);
             this.groupBox5.Controls.Add(this.radioButtonDaily);
             this.groupBox5.Location = new System.Drawing.Point(25, 115);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(288, 46);
+            this.groupBox5.Size = new System.Drawing.Size(288, 80);
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "O evento será executado:";
@@ -198,7 +209,7 @@
             // radioButtonWeekly
             // 
             this.radioButtonWeekly.AutoSize = true;
-            this.radioButtonWeekly.Location = new System.Drawing.Point(187, 19);
+            this.radioButtonWeekly.Location = new System.Drawing.Point(160, 57);
             this.radioButtonWeekly.Name = "radioButtonWeekly";
             this.radioButtonWeekly.Size = new System.Drawing.Size(95, 17);
             this.radioButtonWeekly.TabIndex = 3;
@@ -209,7 +220,7 @@
             // radioButtonOneTime
             // 
             this.radioButtonOneTime.AutoSize = true;
-            this.radioButtonOneTime.Location = new System.Drawing.Point(110, 19);
+            this.radioButtonOneTime.Location = new System.Drawing.Point(10, 57);
             this.radioButtonOneTime.Name = "radioButtonOneTime";
             this.radioButtonOneTime.Size = new System.Drawing.Size(67, 17);
             this.radioButtonOneTime.TabIndex = 2;
@@ -221,7 +232,7 @@
             // 
             this.radioButtonDaily.AutoSize = true;
             this.radioButtonDaily.Checked = true;
-            this.radioButtonDaily.Location = new System.Drawing.Point(10, 19);
+            this.radioButtonDaily.Location = new System.Drawing.Point(160, 34);
             this.radioButtonDaily.Name = "radioButtonDaily";
             this.radioButtonDaily.Size = new System.Drawing.Size(81, 17);
             this.radioButtonDaily.TabIndex = 1;
@@ -234,7 +245,7 @@
             // 
             this.groupBoxDate.Controls.Add(this.EventDate);
             this.groupBoxDate.Enabled = false;
-            this.groupBoxDate.Location = new System.Drawing.Point(25, 167);
+            this.groupBoxDate.Location = new System.Drawing.Point(25, 201);
             this.groupBoxDate.Name = "groupBoxDate";
             this.groupBoxDate.Size = new System.Drawing.Size(288, 55);
             this.groupBoxDate.TabIndex = 28;
@@ -271,20 +282,20 @@
             this.comboBoxRelay.TabIndex = 27;
             this.comboBoxRelay.SelectedIndexChanged += new System.EventHandler(this.comboBoxRelay_SelectedIndexChanged);
             // 
-            // groupBox3
+            // groupBoxStopTime
             // 
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.StopSecond);
-            this.groupBox3.Controls.Add(this.StopMinute);
-            this.groupBox3.Controls.Add(this.StopHour);
-            this.groupBox3.Location = new System.Drawing.Point(25, 393);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(288, 66);
-            this.groupBox3.TabIndex = 26;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Horário de término";
+            this.groupBoxStopTime.Controls.Add(this.label4);
+            this.groupBoxStopTime.Controls.Add(this.label5);
+            this.groupBoxStopTime.Controls.Add(this.label6);
+            this.groupBoxStopTime.Controls.Add(this.StopSecond);
+            this.groupBoxStopTime.Controls.Add(this.StopMinute);
+            this.groupBoxStopTime.Controls.Add(this.StopHour);
+            this.groupBoxStopTime.Location = new System.Drawing.Point(25, 412);
+            this.groupBoxStopTime.Name = "groupBoxStopTime";
+            this.groupBoxStopTime.Size = new System.Drawing.Size(288, 66);
+            this.groupBoxStopTime.TabIndex = 26;
+            this.groupBoxStopTime.TabStop = false;
+            this.groupBoxStopTime.Text = "Horário de término";
             // 
             // label4
             // 
@@ -364,20 +375,20 @@
             0,
             0});
             // 
-            // groupBox2
+            // groupBoxStartTime
             // 
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.Hora);
-            this.groupBox2.Controls.Add(this.StartSecond);
-            this.groupBox2.Controls.Add(this.StartMinute);
-            this.groupBox2.Controls.Add(this.StartHour);
-            this.groupBox2.Location = new System.Drawing.Point(25, 320);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(288, 66);
-            this.groupBox2.TabIndex = 25;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Horário de inicio";
+            this.groupBoxStartTime.Controls.Add(this.label3);
+            this.groupBoxStartTime.Controls.Add(this.label2);
+            this.groupBoxStartTime.Controls.Add(this.Hora);
+            this.groupBoxStartTime.Controls.Add(this.StartSecond);
+            this.groupBoxStartTime.Controls.Add(this.StartMinute);
+            this.groupBoxStartTime.Controls.Add(this.StartHour);
+            this.groupBoxStartTime.Location = new System.Drawing.Point(25, 340);
+            this.groupBoxStartTime.Name = "groupBoxStartTime";
+            this.groupBoxStartTime.Size = new System.Drawing.Size(288, 66);
+            this.groupBoxStartTime.TabIndex = 25;
+            this.groupBoxStartTime.TabStop = false;
+            this.groupBoxStartTime.Text = "Horário de inicio";
             // 
             // label3
             // 
@@ -476,10 +487,11 @@
             this.comboBoxEventSlot.Name = "comboBoxEventSlot";
             this.comboBoxEventSlot.Size = new System.Drawing.Size(288, 21);
             this.comboBoxEventSlot.TabIndex = 23;
+            this.comboBoxEventSlot.SelectedIndexChanged += new System.EventHandler(this.comboBoxEventSlot_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(135, 465);
+            this.button1.Location = new System.Drawing.Point(138, 484);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 15;
@@ -495,14 +507,17 @@
             this.statusBar.TabIndex = 1;
             this.statusBar.Text = "statusStrip1";
             // 
-            // label7
+            // radioButtonDesativado
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 72);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Relé:";
+            this.radioButtonDesativado.AutoSize = true;
+            this.radioButtonDesativado.Location = new System.Drawing.Point(10, 34);
+            this.radioButtonDesativado.Name = "radioButtonDesativado";
+            this.radioButtonDesativado.Size = new System.Drawing.Size(79, 17);
+            this.radioButtonDesativado.TabIndex = 4;
+            this.radioButtonDesativado.TabStop = true;
+            this.radioButtonDesativado.Text = "Desativado";
+            this.radioButtonDesativado.UseVisualStyleBackColor = true;
+            this.radioButtonDesativado.CheckedChanged += new System.EventHandler(this.SetEventType);
             // 
             // CfgEventForm
             // 
@@ -514,6 +529,7 @@
             this.Name = "CfgEventForm";
             this.Text = "CfgEventForm1";
             this.Activated += new System.EventHandler(this.CfgEventForm_Activated);
+            this.Shown += new System.EventHandler(this.CfgEventForm_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBoxWeek.ResumeLayout(false);
@@ -521,13 +537,13 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBoxDate.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.groupBoxStopTime.ResumeLayout(false);
+            this.groupBoxStopTime.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StopSecond)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StopMinute)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StopHour)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBoxStartTime.ResumeLayout(false);
+            this.groupBoxStartTime.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StartSecond)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartMinute)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartHour)).EndInit();
@@ -543,14 +559,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBoxEventSlot;
         private System.Windows.Forms.ComboBox comboBoxRelay;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBoxStopTime;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown StopSecond;
         private System.Windows.Forms.NumericUpDown StopMinute;
         private System.Windows.Forms.NumericUpDown StopHour;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBoxStartTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Hora;
@@ -573,6 +589,6 @@
         private System.Windows.Forms.DateTimePicker EventDate;
         private System.Windows.Forms.StatusStrip statusBar;
         private System.Windows.Forms.Label label7;
-
+        private System.Windows.Forms.RadioButton radioButtonDesativado;
     }
 }

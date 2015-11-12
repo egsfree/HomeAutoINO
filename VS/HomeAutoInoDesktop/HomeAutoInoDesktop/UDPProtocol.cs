@@ -175,7 +175,123 @@ namespace HomeAutoInoDesktop
             return 0;
         }
 
-       public unsafe int MakePackage ( CmdData CmdPackage, ref byte[] bData )
+        public unsafe byte GetDateTime(ref int iDay, ref int iMonth, ref int iYear, ref int iHour, ref int iMinute, ref int iSecond )
+        {
+            byte[] bDataToSend = new byte[150];
+            CmdData cmdPackage = new CmdData();
+            int iRet = 0;
+
+            cmdPackage.bCmd = CommandPackgeDefs.CMD_GET_DATETIME;
+            cmdPackage.bDest = 0x74;
+            cmdPackage.bNumData = 1;
+            cmdPackage.bStatus = 0;
+            cmdPackage.bSession = 0;
+
+
+            cmdPackage =  ProcessPackageToRead(cmdPackage);
+
+            if(cmdPackage.bCmd == 0xFF )
+            {
+                return (byte)iRet;
+            }
+
+            iDay    = cmdPackage.bRXData[0];
+            iMonth  = cmdPackage.bRXData[1];
+            iYear   = cmdPackage.bRXData[2] + 2000;
+            iHour   = cmdPackage.bRXData[3];
+            iMinute = cmdPackage.bRXData[4];
+            iSecond = cmdPackage.bRXData[5];
+         
+
+            return 0;
+        }
+
+        public unsafe byte SetDateTime(int iDay, int iMonth, int iYear, int iHour,  int iMinute,  int iSecond)
+        {
+            byte[] bDataToSend = new byte[150];
+            CmdData cmdPackage = new CmdData();
+            int iRet = 0;
+
+            cmdPackage.bCmd = CommandPackgeDefs.CMD_SET_DATETIME;
+            cmdPackage.bDest = 0x74;
+            cmdPackage.bNumData = 6;
+            cmdPackage.bStatus = 0;
+            cmdPackage.bSession = 0;
+
+            cmdPackage.bRXData[0] = (byte)iDay;
+            cmdPackage.bRXData[1] = (byte)iMonth;
+            cmdPackage.bRXData[2] = (byte)(iYear - 2000);
+            cmdPackage.bRXData[3] = (byte)iHour;
+            cmdPackage.bRXData[4] = (byte)iMinute;
+            cmdPackage.bRXData[5] = (byte)iSecond;
+
+            iRet = ProcessPackageToSend(cmdPackage);
+
+            if (iRet != 0)
+            {
+                return (byte)iRet;
+            }
+
+
+
+
+            return 0;
+        }
+
+        public unsafe byte SendReadEventCommand(int Slot, ref int StartDay, ref int StartMonth, ref int StartYear, ref int StartHour, ref int StartMinute, ref int StartSecond, ref int StopHour, ref int StopMinute, ref int StopSecond, ref int Type, ref int Relay, ref byte WeekDays)
+        {
+            byte[] bDataToSend = new byte[150];
+            CmdData cmdPackage = new CmdData();
+            int iRet = 0;
+
+            cmdPackage.bCmd = CommandPackgeDefs.CMD_GET_EVENT;
+            cmdPackage.bDest = 0x74;
+            cmdPackage.bNumData = 1;
+            cmdPackage.bRXData[0] = (byte)Slot;
+
+            cmdPackage = ProcessPackageToRead(cmdPackage);
+
+            if (cmdPackage.bCmd != 0xFF)
+            {
+               // Slot                     =     (int)cmdPackage.bRXData[0];
+                Type                     =     (int)cmdPackage.bRXData[1];
+                Relay                    =     (int)cmdPackage.bRXData[2]; 
+                StartDay                 =     (int)cmdPackage.bRXData[3]; 
+                StartMonth               =     (int)cmdPackage.bRXData[4]; 
+                StartYear                =     (int)cmdPackage.bRXData[5] + 2000;
+                WeekDays                 =     cmdPackage.bRXData[6];
+                StartHour                =     (int)cmdPackage.bRXData[7];
+                StartMinute              =     (int)cmdPackage.bRXData[8];
+                StartSecond              =     (int)cmdPackage.bRXData[9];
+                StopHour                 =     (int)cmdPackage.bRXData[10];
+                StopMinute               =     (int)cmdPackage.bRXData[11];
+                StopSecond               =     (int)cmdPackage.bRXData[12];
+            }
+
+            /*
+            cmdPackage.bStatus = 0;
+            cmdPackage.bSession = 0;
+            cmdPackage.bRXData[0] = (byte)Slot;
+            cmdPackage.bRXData[1] = (byte)Type; //Type
+            cmdPackage.bRXData[2] = (byte)Relay; //Relay
+            cmdPackage.bRXData[3] = (byte)StartDate.Day;
+            cmdPackage.bRXData[4] = (byte)StartDate.Month;
+            cmdPackage.bRXData[5] = (byte)(StartDate.Year - 2000);
+            cmdPackage.bRXData[6] = WeekDays;
+            cmdPackage.bRXData[7] = (byte)StartDate.Hour;
+            cmdPackage.bRXData[8] = (byte)StartDate.Minute;
+            cmdPackage.bRXData[9] = (byte)StartDate.Second;
+            cmdPackage.bRXData[10] = (byte)StopDate.Hour;
+            cmdPackage.bRXData[11] = (byte)StopDate.Minute;
+            cmdPackage.bRXData[12] = (byte)StopDate.Second;
+
+            iRet = ProcessPackageToSend(cmdPackage);
+            */
+
+            return cmdPackage.bStatus;
+        }
+
+        public unsafe int MakePackage ( CmdData CmdPackage, ref byte[] bData )
         {
             /*byte [] bData = new byte[128];*/
             int DataCount = 0;

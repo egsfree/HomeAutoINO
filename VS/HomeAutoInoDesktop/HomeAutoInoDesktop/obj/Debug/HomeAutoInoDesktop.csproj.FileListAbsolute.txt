@@ -12,8 +12,8 @@ C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAuto
 C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\obj\Debug\HomeAutoInoDesktop.pdb
 C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\bin\Debug\HomeAutoInoDesktop.exe
 C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\bin\Debug\HomeAutoInoDesktop.pdb
-C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\obj\Debug\HomeAutoInoDesktop.csprojResolveAssemblyReference.cache
 C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\obj\Debug\HomeAutoInoDesktop.Principal.resources
 C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\obj\Debug\HomeAutoInoDesktop.Properties.Resources.resources
 C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\obj\Debug\HomeAutoInoDesktop.csproj.GenerateResource.Cache
 C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\obj\Debug\HomeAutoInoDesktop.CfgEventForm.resources
+C:\Users\Eduardo\Desktop\Jagger\trunk\HomeAutoIno\VS\HomeAutoInoDesktop\HomeAutoInoDesktop\obj\Debug\HomeAutoInoDesktop.csprojResolveAssemblyReference.cache

@@ -23,4 +23,8 @@
 #define CMD_GET_IP 0x0D
 #define CMD_SET_IP 0x0E
 
+
+#define CMD_GET_DATETIME 0x0F
+#define CMD_SET_DATETIME 0x10
+
 #endif

@@ -168,13 +168,13 @@ namespace HomeAutoInoDesktop
                 Serial.Read(bRData, 0, 13);
                 Serial.Close();
 
-                textBoxIPFromSys.Text = Convert.ToString(bRData[7]) + "." + Convert.ToString(bRData[8]) + "." + Convert.ToString(bRData[9]) + "." + Convert.ToString(bRData[10]);
+                textBoxIP.Text = Convert.ToString(bRData[7]) + "." + Convert.ToString(bRData[8]) + "." + Convert.ToString(bRData[9]) + "." + Convert.ToString(bRData[10]);
                 
             }
             catch (Exception)
             {
                 Serial.Close();
-                textBoxIPFromSys.Text = "Erro.";
+                textBoxIP.Text = "Erro.";
             }
 
 
@@ -186,6 +186,46 @@ namespace HomeAutoInoDesktop
         {
             var ports = System.IO.Ports.SerialPort.GetPortNames();
             comboBoxPorts.DataSource = ports;
+        }
+
+        private void buttonGetDateTime_Click(object sender, EventArgs e)
+        {
+            int iDia = 0;
+            int iMes = 0;
+            int iAno = 0;
+
+            int iHora = 0;
+            int iMin = 0;
+            int iSec = 0;
+
+            byte bRet = UDPProt.GetDateTime(ref iDia, ref iMes, ref iAno, ref iHora, ref iMin, ref iSec);
+
+            if(bRet == 0)
+            {
+                textBoxDateTime.Text = Convert.ToString(iDia) + "/" + Convert.ToString(iMes) + "/" + Convert.ToString(iAno) + "  -  " +
+                    Convert.ToString(iHora) + ":" + Convert.ToString(iMin) + ":" + Convert.ToString(iSec);
+            }
+            else
+            {
+                textBoxDateTime.Text = "Erro.";
+            }
+
+
+
+        }
+
+        private void buttonSyncDateTime_Click(object sender, EventArgs e)
+        {
+            int iDia = DateTime.Now.Day;
+            int iMes = DateTime.Now.Month; 
+            int iAno = DateTime.Now.Year;
+
+            int iHora = DateTime.Now.Hour; 
+            int iMin  = DateTime.Now.Minute;
+            int iSec  = DateTime.Now.Second;
+
+            UDPProt.SetDateTime(iDia, iMes, iAno, iHora, iMin, iSec);
+
         }
     }
 }
